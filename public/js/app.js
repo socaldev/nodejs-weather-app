@@ -17,7 +17,7 @@ const getWeather =(query) =>{
         icon_img.innerHTML = `<img class="icon" src=${data.forecast.icon}>`
     })
 })
-
+//Test
 } 
 const weatherForm = document.querySelector('form')
 const searchElement = document.querySelector('input')
