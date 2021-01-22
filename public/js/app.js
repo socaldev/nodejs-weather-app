@@ -1,5 +1,3 @@
-console.log('Client side js file is loaded')
-
 const getWeather =(query) =>{
     location_p.textContent = 'Loading weather data...'
     temp_p.textContent = ''
