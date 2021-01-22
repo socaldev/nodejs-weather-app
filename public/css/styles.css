@@ -1,0 +1,32 @@
+h1 {
+    color: grey;
+    text-justify: center;
+    margin: 10px;
+}
+.navbar-brand{
+    margin: 10px;
+}
+
+.icon {
+    width: 75px;
+    border-radius: 50%;
+}
+.footer {
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 60px !important;
+    line-height: 60px !important;
+    background-color: #f5f5f5 !important;
+}
+
+.main-content {
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
