@@ -8,14 +8,16 @@ const forecast = (lat, long, callback) => {
             error = body.error.info
             callback(error, undefined)
         } else {
-            const { location:{name, region}, current:{temperature, precip, weather_descriptions, weather_icons} }  = body
+            const { location:{name, region}, current:{temperature, precip, weather_descriptions, weather_icons, wind_speed, wind_dir} }  = body
             data = {
                 city: name,
                 region,
                 temp: temperature,
                 precip,
                 desc: weather_descriptions,
-                icon: weather_icons[0]
+                icon: weather_icons[0],
+                wind_speed,
+                wind_dir,
             }
             callback(undefined, data)
         }
